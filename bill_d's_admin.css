@@ -1,0 +1,191 @@
+/*Css Start*/
+/*Font Import From Google*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/*Genral Code For Body*/
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    
+}
+a:link { text-decoration: none; }
+/*Navigation Bar Start*/
+/*Bar Code*/
+.navbar{
+    height: 60px;
+    background-color: #000;
+    color: white;
+    display:flex;
+    align-items: center;
+    width: 100%;
+ 
+
+}
+/*Logo*/
+.nav-logo{
+    height: 50px;
+    width: 100px; 
+    margin-left: 10px;
+}
+/*Options*/
+.home{
+    user-select: none;
+}
+.about{
+    margin-left: 50px;
+    user-select: none;
+}
+.about{
+    margin-left: 50px;
+    user-select: none;
+}
+
+.nav-certified ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-certified ul li {
+    padding: 10px 15px;
+    margin: 0 10px;
+    position: relative;
+}
+/*Options Design Or Animation*/
+.nav-certified ul li::before,
+ul li::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+.nav-certified ul li::before {
+    top: 0;
+    left: 0;
+}
+.nav-certified ul li::after {
+    bottom: 0;
+    right: 0;
+}
+.nav-certified ul li.active::before,
+.nav-certified ul li:hover::before {
+    right: 0;
+    left: auto;
+    width: 100%;
+    background-color: #fff;
+}
+.nav-certified ul li.active::after,
+.nav-certified ul li:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.nav-certified ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s all ease-in-out;
+}
+.nav-certified ul li.active a,
+.nav-certified ul li:hover a {
+    color: #fff;
+}
+/*Style For Code With D's Heading*/
+
+#top-heading{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 45px;
+    user-select: none;
+}
+#second-top-heading{
+    text-align: center;
+    user-select: none;
+}
+/*Billing Headding Style*/
+.billing-heading{
+  
+    user-select: none;
+    position:absolute;
+    display: inline;
+    margin-left: 20%;
+}
+/*Full Form Space*/
+.form-data-space{
+    width: 90%;
+    height: 1000px;
+    background-color: gray;
+    margin-left: 5%;
+    margin-top:50px;
+    border-radius: 10px;
+    border: #000 solid 3px;
+    user-select: none;
+}
+.emp-data{
+   width: 70%;
+   height: 200px;
+   border: #000 solid 3px;
+   margin-left: 5%;
+   margin-top:50px;
+   border-radius: 10px;
+}
+.f-logo-img{
+    height: 20%;
+    width: 20%;
+    float: right;
+    margin-right: 2%;
+    margin-top: 50px;
+    
+}
+input{
+    border-radius: 5px;
+    height: 25px;
+    border-color: transparent;
+    padding-left: 10px;
+}
+.div-lbl{
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display:inline-flex;
+    position: relative;
+}
+#ename{
+    width: 500px;
+}
+#lbl{
+    padding-right: 10px;
+}
+.form-data-space > .emp-data > h2{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#post{
+    height: 25px;
+    border-radius: 5px;
+}
+#hr1{
+    margin-top: 10px;
+    border: #000 solid 2px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.billing-data-cus{
+    width: 90%;
+    height: 50%;
+    border: #000 solid 3px;
+    border-radius: 10px;
+    margin-left: 5%;
+   margin-top:30px;
+}
+.form-data-space > .billing-data-cus > h2{
+    margin-top: 10px;
+    margin-left: 5px;
+}
